@@ -1,5 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Prueba from './components/Prueba'
+import Clock from './components/clock'
 
-ReactDOM.render(<Prueba />,document.getElementById('app'))
+ReactDOM.render(<Clock />,document.getElementById('app'))
