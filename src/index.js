@@ -1,5 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Clock from './components/clock'
+import Header from './components/Header'
 
-ReactDOM.render(<Clock />,document.getElementById('app'))
+ReactDOM.render(<Header />,document.getElementById('app'))
