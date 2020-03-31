@@ -1,0 +1,18 @@
+[
+ 
+    {  
+       "id":"01",
+       "img" : "src/components/Slider/images/slides/base/0.png"
+ 
+   },
+   {
+    "id":"02",
+    "img" : "src/components/Slider/images/slides/base/1.png"
+   },
+   {
+    "id":"03",
+    "img" : "src/components/Slider/images/slides/base/2.png"
+   }
+
+ 
+]

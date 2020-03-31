@@ -1,0 +1,16 @@
+@import '../../general/styles.scss';
+
+.Dir{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    p{
+        color:$blue;
+        span{
+            margin-left: 5px;
+        }
+    }
+}
+
+

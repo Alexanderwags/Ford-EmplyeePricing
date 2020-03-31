@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-
+import './styles.scss'
 const clock = () => {
-  const [date, setDate] = useState(new Date("2016-06-01 5:00:00 PM"));
+  const [date, setDate] = useState(new Date(2020,2,13,4,24,0));
   const [Hour, setHour] = useState(0);
   const [Minutes, setMinutes] = useState(0);
   const [Seconds, setSeconds] = useState(0);
@@ -13,17 +13,17 @@ const clock = () => {
     tiempo.horas = date.getHours() - now.getHours();
     tiempo.minuto = date.getMinutes() + 60 - now.getMinutes();
     tiempo.segundos = "0" + date.getSeconds() + 60 - now.getSeconds();
-    setHour(tiempo.horas);
+    setHour(tiempo.horas*-1);
     setMinutes(tiempo.minuto);
     setSeconds(tiempo.segundos);
   }
   function imprimirfecha() {
     return (
-      <h1>
-        <span>{Hour} </span>
-        <span>{Minutes} </span>
-        <span>{Seconds} </span>
-      </h1>
+      <div className="clock">
+        <p>{Hour} |</p>
+        <p>{Minutes} |</p>
+        <p>{Seconds} </p>
+      </div>
     );
   }
   useEffect(() => {

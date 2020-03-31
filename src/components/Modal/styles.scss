@@ -1,0 +1,12 @@
+@import '../../general//styles.scss';
+
+.modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .play{
+     background: transparent;
+     border:0;
+     cursor:pointer;
+   }
+}

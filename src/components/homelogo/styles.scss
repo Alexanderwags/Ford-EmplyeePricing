@@ -1,0 +1,73 @@
+@import "../../general/styles.scss";
+
+.logo{
+    width: 100%;
+    max-width:320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-top:50px;
+    
+    .img-ford{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width:300px;
+        height: 20px;
+        > div{
+          width: 40%;
+          height: 3px;
+          background-color: $blue;  
+        }
+        > h4{
+            font-size: 1.5rem;
+            text-align: center;
+            width: 20%;
+            margin: 0;
+            color:$blue;
+          }
+    }
+    .text-ford{
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 5px;
+        border-bottom: 3px solid $blue;
+        h1{
+            color:$blue;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin: 0;
+        }
+    }
+
+
+}
+
+.color{
+   
+    
+    .img-ford{
+       
+        > div{
+         
+          background-color: #fff;  
+        }
+         > h4{
+            
+            color:#fff;
+          }
+       
+    }
+    .text-ford{
+     
+        border-bottom: 3px solid #fff;
+        h1{
+            color:#fff;
+        }
+    }
+
+
+}

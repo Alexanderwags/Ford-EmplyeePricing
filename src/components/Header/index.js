@@ -8,7 +8,7 @@ const Header = () => {
     return (
        <div className="header">
          <Logo />
-         <EventExpire event="ford"/>
+         <EventExpire event="Event Expires   March 28, 2020"/>
          <CLock />
        </div>
     )

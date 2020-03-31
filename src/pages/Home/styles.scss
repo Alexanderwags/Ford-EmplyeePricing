@@ -1,0 +1,51 @@
+@import "../../general//styles.scss";
+
+.Home{
+    display: flex;
+    @media all and (max-width: $breakpoint-tablet) {
+       flex-direction: column;
+    }   
+    .info-home{
+
+        width:60%;
+        background-repeat: no-repeat;
+        background-size: 100% 60%;
+        
+      
+        @media (min-width:$breakpoint-mobile) and (max-width:$breakpoint-tablet) {
+            width: 100%;
+            .sec-1{ 
+               
+                padding: 5%;
+                padding-top: 0;
+                padding-bottom: 0;
+             }
+         }  
+         @media all and (max-width:$breakpoint-mobile)  {
+            width:100%;
+            .sec-1 .swiper-button-next,.swiper-button-prev{
+                display: none;
+            }
+          
+       }
+
+    }
+    .aside{
+        background-color: $blue;
+        width:40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        @media (min-width:$breakpoint-mobile) and (max-width:$breakpoint-tablet){
+            width: 90%;
+            margin:0 auto;
+         } 
+         @media all and (max-width:$breakpoint-mobile){
+            width: 90%;
+            margin:0 auto;
+            
+         } 
+    }
+    
+}

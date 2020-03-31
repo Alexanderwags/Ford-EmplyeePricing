@@ -9,7 +9,9 @@ module.exports = {
     filename: 'bundle.js',
   },
   resolve: {
-    extensions: ['.js', '.jsx'],
+    extensions: ['.js', '.jsx', '.json'],
+    modules: [path.resolve(__dirname, 'src'), 'node_modules'],
+   
   },
   module: {
     rules: [
@@ -37,9 +39,9 @@ module.exports = {
       {
         test: /\.(png|gif|jpg)$/,
         use: [
-          {
+           {
             'loader': 'file-loader',
-            options: {
+            options: {    
               name: 'assets/[hash].[ext]'
             }
           }
@@ -47,6 +49,9 @@ module.exports = {
       }
 
     ],
+  },
+  devServer:{
+     historyApiFallback:true,
   },
   plugins: [
     new HtmlWebpackPlugin({

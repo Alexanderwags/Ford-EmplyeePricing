@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen:300,400,700&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap&subset=latin-ext');
+$blue: #123574; 
+$bluelight: #29bae5;
+
+$breakpoint-mobile: 767px;
+$breakpoint-tablet: 1023px;
+$breakpoint-desktop: 1200px;
+$breakpoint-main-container: 1066px;
+html{
+    font-family: 'Oxygen', sans-serif;
+  
+}
+body{
+    margin:0;
+    padding:0;
+ }
+ h4{
+     font-family: 'Pacifico', cursive;
+
+ }

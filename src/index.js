@@ -1,5 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Header from './components/Header'
+import Routes from './pages/Routes'
+import './general/styles.scss'
 
-ReactDOM.render(<Header />,document.getElementById('app'))
+
+ReactDOM.render(<Routes />, document.getElementById("app"));
