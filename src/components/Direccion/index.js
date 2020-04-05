@@ -8,7 +8,9 @@ const Direccion = ({
   postal_code = "5001"
 }) => {
   return (
-    <div className="Dir">
+
+      
+    <div className="Dir" >
       <p><small>
         <span>{dealer}</span>
         <span>|</span>

@@ -1,24 +1,33 @@
-import React from 'react'
+import React, { useState } from "react";
 import './styles.scss'
+import { Redirect } from "react-router";
+
 import useSignUpForm from '../CustomHooks'
 const searchHome = () => {
-     const signup = () => {
-       alert(`User Created!
-         Name: ${inputs.password1}`);
-     };
-     const { inputs, handleInputChange, handleSubmit } = useSignUpForm(signup);
-
+    const [code, setCode] = useState("")
+    const [Loading, setLoading] = useState(false)
+    if (Loading) {
+      return <Redirect to={`${window.location.pathname}Step1`} />;
+    }
     return (
-      <form className="search" onSubmit={handleSubmit}>
+      <form
+        className="search"
+        onSubmit={e => {
+          e.preventDefault();
+          setLoading(true);
+          console.log(Loading)
+         
+        }}
+      >
         <h6>Enter your promo code to claim your voucher</h6>
-        <label name=""></label>
+
         <input
           type="text"
           placeholder="****"
           required
-          name="password1"
-          onChange={handleInputChange}
-          value={inputs.password1}
+          name="code"
+          onChange={e => setCode(e.target.value)}
+          value={code}
         ></input>
         <button type="submit" className="btnh">
           Sign Up
